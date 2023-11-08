@@ -1,3 +1,4 @@
+#消去首位空格
 def trim(s) :
     if(s == ""):
         return s 
