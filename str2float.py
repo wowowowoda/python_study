@@ -1,8 +1,10 @@
 from functools import reduce
 
-def str2num(s):
-    # if()
-    return int(s)
+def str2num(s) :
+    try:
+        return int(s)
+    except ValueError:
+        return float(s)
 
 def calc(exp):
     ss = exp.split('+')
@@ -16,3 +18,4 @@ def main():
     print('99 + 88 + 7.6 =', r)
 
 main()
+print("END")
